@@ -1,0 +1,198 @@
+p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.totalArea {
+  width: 750px;
+  height: 2160px;
+  background-color: antiquewhite;
+  margin: 0 auto;
+  border: 15px solid brown;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.height {
+  height: 100%;
+  position: absolute;
+  left: 100%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.weight {
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+}
+
+.forntArea {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.forntAreaDetails {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.gate {
+  margin-left: 45px;
+  background-color: green;
+  width: 300px;
+  height: 20px;
+}
+
+.chicken {
+  background-color: rebeccapurple;
+  width: 150px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planArea {
+  display: flex;
+  background-color: green;
+  height: 1830px;
+}
+
+.papayaTreeArea {
+  width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  overflow: hidden;
+  position: relative;
+}
+
+.singlePapaya {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  /* border-radius: 50%; */
+}
+
+.planAreaTwo .singlePapaya {
+  height: 90px;
+  width: 90px;
+}
+
+.planAreaTwo .papayaSpace {
+  left: 120px;
+}
+
+.leftSpace {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.papayaSpace {
+  position: absolute;
+  left: 160px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSpace p,
+.papayaSpace p {
+  margin: 0;
+  padding: 0;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.singlePapaya::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: black;
+  bottom: 0;
+  right: 100%;
+}
+
+.singlePapaya:nth-child(4n)::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: black;
+  bottom: 0;
+  right: 0;
+}
+
+.mainRoad {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(85, 48, 48);
+}
+
+.mainRoad p {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.plantingLan {
+  width: 300px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 22.5px;
+  position: relative;
+}
+
+.singleLan {
+  height: 150px;
+  background-color: black;
+}
+
+.lanColumRoad {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.lanRowRoad {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.singleLan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.singleLan p {
+  color: white;
+}
