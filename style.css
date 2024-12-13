@@ -129,17 +129,20 @@ p {
   background-color: black;
   bottom: 0;
   right: 100%;
+  z-index: 1;
 }
 
 .singlePapaya:nth-child(4n)::before {
   content: "";
   position: absolute;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  background-color: black;
+  height: 10px;
+  width: 360px;
+  /* border-radius: 50%; */
+  background-color: white;
+  transform: translateY(25%);
   bottom: 0;
   right: 0;
+  z-index: 0;
 }
 
 .mainRoad {
