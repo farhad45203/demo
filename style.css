@@ -40,14 +40,14 @@ p {
 
 .forntAreaDetails {
   position: absolute;
-  left: 0;
+  right: 0;
   height: 100%;
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
 
 .gate {
-  margin-left: 45px;
+  margin-right: 45px;
   background-color: green;
   width: 300px;
   height: 20px;
@@ -70,11 +70,9 @@ p {
 
 .papayaTreeArea {
   width: 360px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: end;
-  overflow: hidden;
-  position: relative;
+  display: grid;
+  gap: 15px;
+  padding: 10px 0;
 }
 
 .singlePapaya {
@@ -161,17 +159,20 @@ p {
 
 .plantingLan {
   width: 300px;
-  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 30px;
-  row-gap: 22.5px;
-  position: relative;
+  gap: 22.5px;
+  padding: 15px 0;
 }
 
-.singleLan {
-  height: 150px;
-  background-color: black;
+.lan-item p {
+  font-size: 12px;
+  margin: auto 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .lanColumRoad {
