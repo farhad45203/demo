@@ -69,12 +69,15 @@ lans.forEach(lan => {
     const lanItem = document.createElement('div');
     lanItem.classList.add('lan-item');
 
-    lanItem.style.backgroundColor = lan.bgColour;
+    // lanItem.style.backgroundColor = lan.bgColour;
     lanItem.style.width = lan.weight;
     lanItem.style.height = lan.height;
+    
+    const heightValue = parseFloat(lan.height); 
+    const heightMultiplied = heightValue / 15;
 
     lanItem.innerHTML = `
-        <p>${lan.description} ${lan.lanName}</p>
+        <p class="lanDetails">${lan.lanName} ${lan.description}</p><span class="lanHeight">${heightMultiplied}'</span><span class="lanWeight">9'</span>
     `;
 
     
@@ -101,25 +104,25 @@ const pepeLans = [
     { description: "Pepe", lanName: "8", height: "30px", weight: "100%", bgColour:"#ffb108" },
     { description: "Tomato", lanName: "9", height: "37.5px", weight: "100%", bgColour:"#ff041b" },
     { description: "Pepe", lanName: "9", height: "30px", weight: "100%", bgColour:"#ffb108" },
-    { description: "Fulkopi", lanName: "1", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
+    { description: "Brokly", lanName: "1", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
     { description: "Pepe", lanName: "10", height: "30px", weight: "100%", bgColour:"#ffb108" },
-    { description: "Fulkopi", lanName: "2", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
+    { description: "Brokly", lanName: "2", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
     { description: "Pepe", lanName: "11", height: "30px", weight: "100%", bgColour:"#ffb108" },
-    { description: "Fulkopi", lanName: "3", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
+    { description: "Brokly", lanName: "3", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
     { description: "Pepe", lanName: "12", height: "30px", weight: "100%", bgColour:"#ffb108" },
-    { description: "Fulkopi", lanName: "4", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
+    { description: "Brokly", lanName: "4", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
     { description: "Pepe", lanName: "13", height: "30px", weight: "100%", bgColour:"#ffb108" },
-    { description: "Fulkopi", lanName: "5", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
+    { description: "Brokly", lanName: "5", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
     { description: "Pepe", lanName: "14", height: "30px", weight: "100%", bgColour:"#ffb108" },
-    { description: "Fulkopi", lanName: "6", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
+    { description: "Brokly", lanName: "6", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
     { description: "Pepe", lanName: "15", height: "30px", weight: "100%", bgColour:"#ffb108" },
-    { description: "Fulkopi", lanName: "7", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
+    { description: "Brokly", lanName: "7", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
     { description: "Pepe", lanName: "16", height: "30px", weight: "100%", bgColour:"#ffb108" },
-    { description: "Fulkopi", lanName: "8", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
+    { description: "Brokly", lanName: "8", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
     { description: "Pepe", lanName: "17", height: "30px", weight: "100%", bgColour:"#ffb108" },
-    { description: "Fulkopi", lanName: "9", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
+    { description: "Brokly", lanName: "9", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
     { description: "Pepe", lanName: "18", height: "30px", weight: "100%", bgColour:"#ffb108" },
-    { description: "Fulkopi", lanName: "10", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
+    { description: "Brokly", lanName: "10", height: "37.5px", weight: "100%", bgColour:"#1ac869" },
 ]
 
 const papayaTreeArea = document.querySelector(".papayaTreeArea");
@@ -130,12 +133,18 @@ pepeLans.forEach(pepeLan => {
     const pepeLanItem = document.createElement('div');
     pepeLanItem.classList.add('lan-item');
 
-    pepeLanItem.style.backgroundColor = pepeLan.bgColour;
+    // pepeLanItem.style.backgroundColor = pepeLan.bgColour;
     pepeLanItem.style.width = pepeLan.weight;
     pepeLanItem.style.height = pepeLan.height;
 
+    
+    const heightValue = parseFloat(pepeLan.height); 
+    const heightMultiplied = heightValue / 15;
+
+    
+
     pepeLanItem.innerHTML = `
-        <p>${pepeLan.description} ${pepeLan.lanName}</p>
+     <p class="lanDetails">${pepeLan.lanName} ${pepeLan.description}</p><span class="lanHeight">${heightMultiplied}'</span><span class="lanWeight">24'</span>
     `;
 
     
